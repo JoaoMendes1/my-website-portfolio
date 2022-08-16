@@ -723,6 +723,10 @@ img {
 }
 
 /* Modo Ativo */
+.active-modal{
+  opacity: 1;
+  visibility: visible;
+}
 
 
 /*==================== PORTIFOLIO ====================*/
