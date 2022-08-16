@@ -652,6 +652,7 @@ img {
   display: block;
   font-size: 1.5rem;
   color: var(--first-color);
+  margin-top: -2.5rem;
   margin-bottom: var(--mb-1);
 }
 
