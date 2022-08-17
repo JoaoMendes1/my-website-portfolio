@@ -9,7 +9,7 @@
     /*COR PREFERENCIAL*/
 
     /*Alterar cor favoritae*/
-    --hue-color: 230; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 100; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 80%, 61%);
@@ -279,13 +279,13 @@ img {
 }
 
 .home__blob{
-  width: 240px;
+  width: 210px;
   fill: var(--first-color);
  
 }
 
 .home__blob-img{
-  width: 175px;
+  width: 145px;
   
    
 }
