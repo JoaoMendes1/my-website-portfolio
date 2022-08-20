@@ -247,7 +247,9 @@ img {
 }
 
 /* Link ativo */
-
+.active-link{
+  color: var(--first-color);
+}
 
 /* Alterar cabeçalho de plano de fundo */
 
