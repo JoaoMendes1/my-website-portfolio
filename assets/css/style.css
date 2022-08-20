@@ -9,7 +9,7 @@
     /*COR PREFERENCIAL*/
 
     /*Alterar cor favoritae*/
-    --hue-color: 20; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
+    --hue-color: 142; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 80%, 61%);
@@ -72,10 +72,38 @@
 }
 
 /*========== Variáveis Dark tema ==========*/
+body.dark-theme{
+  /* HSL color mode */
+  
+  --first-color-second: hsl(var(--hue-color), 30%, 8%);
+  --title-color: hsl(var(--hue-color), 8%, 95%);
+  --text-color: hsl(var(--hue-color), 8%, 75%);
+  --input-color: hsl(var(--hue-color), 29%, 16%);
+  --body-color: hsl(var(--hue-color), 28%, 12%);
+  --container-color: hsl(var(--hue-color), 29%, 16%);
+  --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
+    --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 
+  
+  
+}
 
 /*========== Botão Dark/Light ==========*/
+.nav__btns{
+  display: flex;
+  align-items: center;
+}
 
+.change-theme{
+  font-size: 1.25rem;
+  color: var(--title-color);
+  margin-right: var(--mb-1);
+  cursor: pointer;
+}
+
+.change-theme:hover{
+  color: var(--first-color);
+}
 
 /*==================== BASE ====================*/
 * {
@@ -810,7 +838,7 @@ img {
 }
 
 .project__bg {
-  background-color: var(--first-color);
+  background-color: var(--first-color-second);
   padding-top: 3rem;
 }
 
@@ -825,7 +853,7 @@ img {
 
 .project__title, 
 .project__description{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .project__img{
@@ -960,7 +988,7 @@ img {
 .footer__copy{
   font-size: var(--smaller-font-size);
   text-align: center;
-  color: black;
+  color: rgb(255, 255, 255);
   margin-top: var(--mb-3);
 }
 
@@ -968,7 +996,7 @@ img {
 .footer__subtitle,
 .footer__link,
 .footer__social{
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 
@@ -1001,7 +1029,20 @@ img {
 }
 
 /*========== BARRA DE ROLAGEM ==========*/
+::-webkit-scrollbar{
+  width: .60rem;
+  background-color: var(--scroll-bar-color);
+  border-radius: .5rem;
+}
 
+::-webkit-scrollbar-thumb{
+  background-color: var(--scroll-thumb-color);
+  border-radius: .5rem;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background-color: var(--text-color-light);
+}
 
 /*==================== MIDIA ====================*/
 /* Para dispositivos pequenos */
