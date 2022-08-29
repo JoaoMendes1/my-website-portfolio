@@ -12,7 +12,7 @@
     --hue-color: 142; /*Purple 250 - Green 142 - Blue 230 - Pink 340*/
 
     /* HSL color mode */
-    --first-color: hsl(var(--hue-color), 80%, 61%);
+    --first-color: hsl(var(--hue-color), 70%, 61%);
     --first-color-second: hsl(var(--hue-color), 69%, 61%);
     --first-color-alt: hsl(var(--hue-color), 100%, 53%); /*45*/
     --first-color-lighter: hsl(var(--hue-color), 92%, 85%);
@@ -20,7 +20,7 @@
     --text-color: hsl(var(--hue-color), 8%, 45%);
     --text-color-light: hsl(var(--hue-color), 8%, 65%);
     --input-color: hsl(var(--hue-color), 70%, 96%);
-    --body-color: hsl(var(--hue-color), 60%, 99%);
+    --body-color: hsl(var(--hue-color), 60%, 96%);
     --container-color: #fff;
     --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
     --scroll-thumb-color: hsl(var(--hue-color), 12%, 80%);
@@ -830,6 +830,70 @@ img {
 .swiper-pagination-bullet{
   outline: none;
   
+}
+
+/*==================== WORK ====================*/
+.work__container{
+  padding-top: 1rem;
+}
+
+.work__filters{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: .75rem;
+  margin-bottom: 2rem;
+}
+
+.work__item{
+  cursor: pointer;
+  color: var(--title-color);
+  padding: .25rem .75rem;
+  font-weight: var(--font-medium);
+  border-radius: .5rem;
+}
+
+.work__card{
+  background-color: var(--container-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.work__img{
+  
+  border-radius: 1rem;
+  margin-bottom: .75rem;
+}
+
+.work__title{
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  margin-bottom: .25rem;
+}
+
+.work__button{
+  width: max-content;
+  color: var(--first-color);
+  font-size: var(--small-font-size);
+  display: flex;
+  align-items: center;
+  column-gap: .25rem;
+}
+
+.work__button:hover .work__icon{
+  transform: translateX(.25rem);
+
+}
+
+.work__icon{
+  font-size: 1rem;
+  transform: .4s;
+}
+
+/*Active item work*/
+.active-work{
+  background-color: var(--first-color);
+  color: var(--body-color);
 }
 
 /*==================== PROJETO EM MENTE ====================*/
